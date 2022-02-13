@@ -12,7 +12,6 @@
 }
 
 body {
-    width: 1600px;
     background-color: var (--primary-white-color);
     color: var(--primary-text-color);
     font-family: var(--primary-font-family);
@@ -114,10 +113,13 @@ justify-content: space-between; */
 
 /* ---Main page navigation--- */
 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .nav-logo {
@@ -242,6 +244,7 @@ justify-content: space-between; */
 .features-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
 }
 
 .features-item {
@@ -249,9 +252,10 @@ justify-content: space-between; */
     margin-right: 30px;
 }
 
-.features-item:last-child {
+
+/* .features-item:last-child {
     margin-right: 0;
-}
+} */
 
 .feature-name {
     margin-top: 0;
@@ -288,14 +292,14 @@ justify-content: space-between; */
 .activities-list {
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: -30px; */
-    justify-content: space-between;
+    margin-right: -30px;
+    /* justify-content: space-between; */
 }
 
-
-/* .activities-img {
-    /* flex-basis: calc((100% - 90px) / 3);
-margin-right: 30px; */
+.activities-img {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-right: 30px;
+}
 
 
 /* ---TEAM SECTION--- */
@@ -330,8 +334,8 @@ margin-right: 30px; */
 .member-dscr {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .member-name {
@@ -368,7 +372,7 @@ margin-right: 30px; */
 }
 
 .address {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .address-item:not(:first-child) {
@@ -397,7 +401,7 @@ margin-right: 30px; */
 
 .filters {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
     font-family: inherit;
     font-weight: 500;
@@ -412,7 +416,7 @@ margin-right: 30px; */
     padding: 6px 22px 6px 22px;
     cursor: pointer;
     border-style: none;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
     border-radius: 4px;
     font-family: inherit;
     font-weight: 500;
